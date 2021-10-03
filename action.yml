@@ -1,9 +1,5 @@
 name: 'ecs-deploy'
 description: 'Github action to use pre-built silintl/ecs-deploy docker image'
-inputs:
-  args:
-    description: 'Arguments for ecs-deploy'
-    required: true
 outputs:
   status:
     description: 'status'
@@ -13,5 +9,3 @@ branding:
 runs:
   using: 'docker'
   image: 'docker://silintl/ecs-deploy:3.10.0'
-  args:
-    - ${{ inputs.args }}
