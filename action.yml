@@ -12,6 +12,6 @@ branding:
   color: 'purple'
 runs:
   using: 'docker'
-  image: 'docker://silintl/ecs-deploy:3.10.0@c840a3ecbe53'
+  image: 'docker://silintl/ecs-deploy:3.10.0'
   args:
     - ${{ inputs.args }}
